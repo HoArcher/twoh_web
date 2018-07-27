@@ -15,8 +15,4 @@ export default {
       },
     ],
   ],
-  pages: {
-    '/': { Route: './routes/PrivateRoute.js' },
-   
-  },
 };
