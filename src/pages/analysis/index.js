@@ -24,8 +24,8 @@ import {
   Bar,
   Pie,
   TimelineChart,
-} from '../../../components/Charts';
-import Trend from '../../../components/Trend';
+} from '../../components/Charts';
+import Trend from '../../components/Trend';
 import styles from './Analysis.less';
   
 const { TabPane } = Tabs;

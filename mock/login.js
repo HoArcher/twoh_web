@@ -58,27 +58,27 @@ const adminDatas = {
     alias: '北京',
     role: 'admin',
   },
-  allowedRouters: ['/dashboard/bookManage', '/dashboard/analysis'],
+  allowedRouters: ['/bookManage', '/analysis'],
   allRouters: ['/dashboard/bookManage', '/dashboard/analysis', '/list/bookList'],
   menus: [
+    // {
+    //   name: '控制台(管理员)',
+    //   icon: 'dashboard',
+    //   path: 'dashboard',
+    //   authority: 'admin',
+    //   children: [
     {
-      name: '控制台(管理员)',
-      icon: 'dashboard',
-      path: 'dashboard',
+      name: '流量统计',
+      path: 'analysis',
       authority: 'admin',
-      children: [
-        {
-          name: '产品分析',
-          path: 'analysis',
-          authority: 'admin',
-        },
-        {
-          name: '书籍管理',
-          path: 'bookManage',
-          authority: 'admin',
-        },
-      ],
-    }
+    },
+    {
+      name: '博客管理',
+      path: 'bookManage',
+      authority: 'admin',
+    },
+    //   ],
+    // }
   ],
   status: 'ok',
   message: '登录成功!',
