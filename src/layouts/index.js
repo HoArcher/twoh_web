@@ -114,6 +114,7 @@ class BasicLayout extends Component {
             <Content style={{ margin: '24px 24px 0', height: '100%' }}>
               {children}
             </Content>
+            <Footer />
           </Layout>
         </Layout>)
 

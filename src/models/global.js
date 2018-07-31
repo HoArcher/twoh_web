@@ -19,8 +19,7 @@ export default {
       });
       if (response.status === 'ok') {
         payload.remember ? localStorage.setItem('sms_uuid', response.uuid) : sessionStorage.setItem('sms_uuid', response.uuid);
-
-        const nextPage = response.info.role === 'user' ? '/list/bookList' : '/dashboard/bookManage';
+        const nextPage = response.info.role === 'user' ? '/analysis' : '/analysis';
         router.push({
           pathname: nextPage,
         });

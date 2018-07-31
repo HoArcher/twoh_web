@@ -19,10 +19,10 @@ import {
   Badge,
   Divider,
 } from 'antd';
-import StandardTable from '../../../components/StandardTable';
-import PageHeaderLayout from '../../../layouts/PageHeaderLayout';  
+import StandardTable from '../../components/StandardTable';
+import PageHeaderLayout from '../../layouts/PageHeaderLayout';  
 
-import styles from '../../style/TableList.less';
+import styles from '../style/TableList.less';
 
 const FormItem = Form.Item;
 

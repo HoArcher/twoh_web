@@ -210,11 +210,11 @@ export default class SiderMenu extends PureComponent {
         breakpoint="lg"
         onCollapse={onCollapse}
         width={256}
-        style={{ background: '#fff' }}
+        style={{ background: '#000' }}
 
       >
         <div className={styles.logo} key="logo">
-          <Link to="/">
+          <Link to="/analysis">
             <img src={logo} alt="logo" />
             <h3>TwoH博客后台管理系统</h3>
           </Link>

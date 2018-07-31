@@ -2,7 +2,6 @@
   "scripts": {
     "dev": "cross-env PORT=9090 umi dev",
     "dev:test": "cross-env PORT=9090 WATCH_FILES=none BROWSER=none CLEAR_CONSOLE=none COMPILE_ON_DEMAND=none COVERAGE=true umi dev",
-    "test": "macaca run -d ./test --verbose",
     "serve": "npm run dev:test &",
     "ci": "npm run serve && npm test"
   },
@@ -32,7 +31,6 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-1": "^6.24.1",
     "bizcharts-plugin-slider": "^2.0.1",
-    "chai": "^4.1.2",
     "cross-env": "^5.1.4",
     "macaca-cli": "^2.1.2",
     "macaca-datahub": "^1.0.50",

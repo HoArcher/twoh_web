@@ -58,8 +58,8 @@ const adminDatas = {
     alias: '北京',
     role: 'admin',
   },
-  allowedRouters: ['/bookManage', '/analysis'],
-  allRouters: ['/dashboard/bookManage', '/dashboard/analysis', '/list/bookList'],
+  allowedRouters: ['/blogManage', '/analysis', '/userManage'],
+  allRouters: ['/bookManage', '/analysis', '/userManage'],
   menus: [
     // {
     //   name: '控制台(管理员)',
@@ -73,10 +73,16 @@ const adminDatas = {
       authority: 'admin',
     },
     {
-      name: '博客管理',
-      path: 'bookManage',
+      name: '博文管理',
+      path: 'blogManage',
       authority: 'admin',
     },
+    {
+      name: '用户管理',
+      path: 'userManage',
+      authority: 'admin',
+    },
+
     //   ],
     // }
   ],
