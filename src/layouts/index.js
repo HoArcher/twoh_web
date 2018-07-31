@@ -1,10 +1,11 @@
-import { Component } from 'react';
+import { Component, Fragment } from 'react';
 import { Layout, Icon, message, Spin } from 'antd';
 import SiderMenu from "../components/SiderMenu/SiderMenu";
 import { getMenuData } from '../common/menu';
 import withRouter from 'umi/withRouter';
 import logo from '../assets/logo.svg';
 import GlobalHeader from "../components/GlobalHeader";
+import GlobalFooter from "../components/GlobalFooter";
 import { enquireScreen, unenquireScreen } from 'enquire-js';
 import { formatter } from '../utils/utils'
 import { connect } from 'dva';
@@ -114,7 +115,17 @@ class BasicLayout extends Component {
             <Content style={{ margin: '24px 24px 0', height: '100%' }}>
               {children}
             </Content>
-            <Footer />
+            <Footer style={{ padding: 0 }}>
+              <GlobalFooter
+                links={[
+                ]}
+                copyright={
+                  <Fragment>
+                    Copyright <Icon type="copyright" /> 2018 TwoH
+                </Fragment>
+                }
+              />
+            </Footer>
           </Layout>
         </Layout>)
 
